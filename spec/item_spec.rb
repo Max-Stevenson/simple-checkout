@@ -2,7 +2,7 @@ require 'item'
 
 describe Item do 
 	names = ["Apple", "orange"]
-	cost = 1.99
+	cost = rand(10) + rand().round(2)
 	let(:item) {item = Item.new(names.sample, cost)}
 
 	describe '#see_price' do
